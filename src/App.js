@@ -1,4 +1,4 @@
-import CampsitesList from './features/campsites/CampsitesList'
+import CampsitesDirectoryPage from '../src/pages/CampsitesDirectoryPage';
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <CampsitesList />
+      <CampsitesDirectoryPage />
       <Footer />
     </div>
     
