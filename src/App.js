@@ -10,12 +10,14 @@ import CampsitesDirectoryPage from "../src/pages/CampsitesDirectoryPage";
 import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import { fetchCampsites } from "./features/campsites/campsitesSlice";
 import AboutPage from "./pages/AboutPage";
+import { fetchPartners } from "./features/partners/partnersSlice";
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCampsites());
+    dispatch(fetchPartners());
   }, [dispatch]);
 
   return (
